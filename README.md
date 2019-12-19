@@ -7,6 +7,7 @@ Text::Hyphen::GenderInclusive - get hyphenation positions with inclusive gender 
 This module handles words with inclusive gender markers.
 
     use Text::Hyphen::GenderInclusive;
+    my $hyphenator = Text::Hyphen::GenderInclusive->new(class => 'Text::Hyphen::DE');
     print $hyphenator->hyphenate("Arbeiter*innen", '-');
 
 See [Text::Hyphen](https://metacpan.org/pod/Text::Hyphen) for the interface documentation.
